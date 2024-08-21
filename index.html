@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic-store-DaisyUI</title>
+    <!-- DaisyUI + Tailwind CDN -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- font awesome cdn -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- tailwind config -->
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    primary: 'rgb(139, 195, 74)',
+                    secondary: 'rgb(17, 17, 17)',
+                    body: 'rgb(248, 246, 243)',
+                    accent: 'rgb(106, 151, 57)',
+                    body_neutral: 'rgb(51, 51, 51)',
+                },
+                fontFamily: {
+                    Poppins: 'Poppins',
+                },
+                backgroundImage: {
+                    leaf: "url('./images/leaf01.png')",
+                    call_to_action: "url('./images/call.jpg')",
+                },
+            },
+        },
+    }
+</script>
+</head>
+<body class="font-Poppnis w-11/12 mx-auto ">
+<!-- header  section start-->
+ <header>
+    <!-- navbar -->
+     <nav>
+        <div class="navbar">
+            <div class="navbar p-0">
+              <a class="w-20  " href="#"><img src="./images/logo.svg" alt=""></a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-3 text-lg font-semibold">
+                <li><a>Home</a></li>
+                <li><a>Everything</a></li>
+                <li><a>Groceries</a></li>
+                <li><a>About</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+                <div class="flex gap-2">
+                    <h3 class="font-semibold text-primary">$20.00</h3>
+                    <a class="text-primary" href="#"><i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                  <a class="">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+                </div>
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden ">
+                    <button><i class="fa-solid fa-bars"></i></button>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 text-lg font-bold">
+                  <li><a>Home</a></li>
+                  <li><a>Everything</a></li>
+                  <li><a>Groceries</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+     </nav>
+     <!-- banner section -->
+ </header>
+<!-- header  section end-->
+
+</body>
+</html>
